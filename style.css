@@ -1605,7 +1605,7 @@ footer .container {
     }
 }
 
-/* Mobile Responsive */
+/* Mobile & Tablet Responsive */
 @media (max-width: 1200px) {
     .container {
         padding: 0 1.5rem;
@@ -1616,107 +1616,13 @@ footer .container {
     .nav-links a {
         font-size: 0.95rem;
     }
-}
-
-@media (max-width: 1050px) {
-    .nav-links {
-        gap: 0.8rem;
-    }
-    .nav-links a {
-        font-size: 0.85rem;
-    }
-    .logo {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .section {
-        padding: 4rem 1.5rem;
-    }
-
     .hero-section {
         padding-top: 100px;
     }
-
-    .hero-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 3rem;
-    }
-
-    .name {
-        font-size: 3.2rem;
-    }
-
-    .role {
-        font-size: 1.8rem;
-    }
-
-    .description {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .hero-btns {
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .btn-primary,
-    .btn-secondary,
-    .btn-cv {
-        width: 100%;
-        max-width: 300px;
-        justify-content: center;
-    }
-
-    .img-placeholder {
-        margin: 0 auto;
-        max-width: 350px;
-    }
-
-    .stats-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
-
-    .timeline::before {
-        left: 0;
-    }
-
-    .timeline-item {
-        width: 100%;
-        padding-left: 2rem;
-        padding-right: 0;
-        justify-content: flex-start;
-    }
-
-    .timeline-item:nth-child(even) {
-        width: 100%;
-        margin-left: 0;
-        padding-left: 2rem;
-    }
-
-    .timeline-dot {
-        left: -8px;
-        right: auto;
-    }
-
-    .timeline-date {
-        position: relative;
-        width: auto;
-        left: 0 !important;
-        right: auto !important;
-        text-align: left !important;
-        margin-bottom: 0.5rem;
-        display: block;
-    }
 }
 
-@media (max-width: 768px) {
+/* Tablet & Mobile Layout (Trigger Hamburger at 1100px) */
+@media (max-width: 1100px) {
     .navbar {
         padding: 1rem 1.5rem;
     }
@@ -1763,25 +1669,91 @@ footer .container {
         font-size: 1.2rem;
     }
 
-    .contact-wrapper {
+    /* Hero Responsive */
+    .hero-content {
         grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
     }
 
     .name {
-        font-size: 2.5rem;
+        font-size: 3rem;
     }
 
     .role {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-btns {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-cv {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    .img-placeholder {
+        margin: 0 auto;
+        max-width: 350px;
+    }
+
+    /* Timeline & Stats */
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .timeline::before {
+        left: 0;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 2rem;
+        padding-right: 0;
+        justify-content: flex-start;
+    }
+
+    .timeline-item:nth-child(even) {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 2rem;
+    }
+
+    .timeline-dot {
+        left: -8px;
+        right: auto;
+    }
+
+    .timeline-date {
+        position: relative;
+        width: auto;
+        left: 0 !important;
+        right: auto !important;
+        text-align: left !important;
+        margin-bottom: 0.5rem;
+        display: block;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
     }
 
     .section-title {
         font-size: 2.2rem;
         margin-bottom: 3rem;
-    }
-
-    .hero-section {
-        padding-top: 120px;
     }
 }
 
