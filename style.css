@@ -2158,12 +2158,8 @@ footer .container {
 
 /* style.css වල 2158 පේළියේ ඉඳන් තියෙන කොටස මේ විදියට වෙනස් කරන්න */
 .cert-modal-content {
-    max-width: 10px; /* Desktop එකට අලුත් අගය */
-    background: rgba(13, 17, 23, 0.95);
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(88, 166, 255, 0.3);
-    padding: 0;
-    overflow: hidden;
+    max-width: 500px;  /* මෙය 600px සිට 500px ට වෙනස් කරන්න */
+    max-height: 95vh;  /* මෙය අලුතින් ඇතුලත් කරන්න */
 }
 
 /* Mobile වලට බලපෑමක් නොවන බව සහතික කිරීමට (Extra Safety) */
@@ -2183,12 +2179,15 @@ footer .container {
 }
 
 .cert-modal-body {
+    padding: 1.5rem;  /* මෙය 3rem සිට 1.5rem ට අඩු කරන්න */
+}
+/*.cert-modal-body {
     padding: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-}
+}*/
 
 .cert-modal-title {
     font-size: 2rem;
@@ -2211,10 +2210,15 @@ footer .container {
 
 .cert-modal-img-container img {
     width: 100%;
+    max-height: 75vh;  /* මෙය අලුතින් ඇතුලත් කරන්න (කැපෙන්නේ නැතුව මුළු certificate එකම පේන්න) */
+    object-fit: contain; /* මෙය අලුතින් ඇතුලත් කරන්න */
+}
+/*.cert-modal-img-container img {
+    width: 100%;
     height: auto;
     display: block;
     transition: transform 0.5s ease;
-}
+}*/
 
 .cert-modal-img-container:hover img {
     transform: scale(1.02);
