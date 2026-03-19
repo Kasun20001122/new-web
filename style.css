@@ -2155,13 +2155,31 @@ footer .container {
 }
 
 /* Next Level Certificate Modal */
+
+/* style.css වල 2158 පේළියේ ඉඳන් තියෙන කොටස මේ විදියට වෙනස් කරන්න */
 .cert-modal-content {
-    max-width: 300px;
+    max-width: 500px; /* Desktop එකට අලුත් අගය */
     background: rgba(13, 17, 23, 0.95);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(88, 166, 255, 0.3);
     padding: 0;
     overflow: hidden;
+}
+
+/* Mobile වලට බලපෑමක් නොවන බව සහතික කිරීමට (Extra Safety) */
+@media (max-width: 768px) {
+    .cert-modal-content {
+        max-width: 95%; /* Mobile වලදී ලස්සනට screen එකට ගැලපෙනවා */
+    }
+}
+
+/*.cert-modal-content {
+    max-width: 300px;
+    background: rgba(13, 17, 23, 0.95);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(88, 166, 255, 0.3);
+    padding: 0;
+    overflow: hidden;*/
 }
 
 .cert-modal-body {
