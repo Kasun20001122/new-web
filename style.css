@@ -2158,7 +2158,7 @@ footer .container {
 
 /* style.css වල 2158 පේළියේ ඉඳන් තියෙන කොටස මේ විදියට වෙනස් කරන්න */
 .cert-modal-content {
-    max-width: 50px; /* Desktop එකට අලුත් අගය */
+    max-width: 10px; /* Desktop එකට අලුත් අගය */
     background: rgba(13, 17, 23, 0.95);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(88, 166, 255, 0.3);
